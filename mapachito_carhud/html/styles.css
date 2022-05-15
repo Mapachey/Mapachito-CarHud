@@ -1,0 +1,126 @@
+@font-face {
+	font-family: "Boxed";
+	src: url('./BoxedRound.ttf');
+}
+
+*
+{
+    letter-spacing: 2px;
+    font-family: "Boxed";
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    user-select:none;
+}
+
+.inCar
+{
+    animation: animCar 0s ease-in;
+}
+
+.outCar
+{
+    animation: animCar2 0s ease-in;
+}
+
+.velocimeter{
+    position: absolute;
+    left: 22%;
+    bottom: 6%;
+    transform: translateX(-50%);
+    width: 9vw;
+    height: 5vw;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-color: rgb(1, 0, 22);
+}
+
+.fuel i
+{
+    position: absolute;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+    font-size: 75%;
+    bottom: 7.7%;
+    left: 23.9%;
+    color: #fff;
+}
+
+.fuel-level
+{
+    position: absolute;
+    font-family: Boxed;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 100%;
+    bottom: 7.4%;
+    left: 24.7%;
+}
+
+.vehicle_state i
+{
+    position: absolute;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+    font-size: 75%;
+    bottom: 7.7%;
+    left: 17.7%;
+    color: #fff;
+}
+
+.state-level
+{
+    position: absolute;
+    font-family: Boxed;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 100%;
+    bottom: 7.4%;
+    left: 18.5%;
+    color: #fff;
+}
+
+.velocity
+{
+    position: absolute;
+    font-family: Boxed;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 300%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 2%;
+}
+
+.km{
+    position: absolute;
+    font-family: Boxed;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 100%;
+    color: white;
+    left: 20.8%;
+    bottom: 7.4%;
+}
+
+@keyframes animCar {
+    0% {
+        bottom: 0px;
+        left: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 20px;
+        left: 20%;
+        opacity: 1;
+    }
+}
+
+@keyframes animCar2 {
+    0% {
+        bottom: 20px;
+        left: 20%;
+        opacity: 1;
+    }
+    100% {
+        bottom: 0px;
+        left: 0;
+        opacity: 0;
+    }
+}
